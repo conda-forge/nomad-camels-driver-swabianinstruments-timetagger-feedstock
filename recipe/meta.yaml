@@ -1,5 +1,5 @@
 {% set name = "nomad-camels-driver-swabianinstruments-timetagger" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/nomad_camels_driver_swabianinstruments_timetagger-{{ version }}.tar.gz
-  sha256: 1debbd3d46d4e4ea1c90fed06e5f31234294559b6df8722a233c49c647ad1a97
+  sha256: d481a9892b5dc85c015859684e2ded89e3bd6c4660c82db13f3a1d586a3380d4
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
